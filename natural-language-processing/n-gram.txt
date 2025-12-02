@@ -1,0 +1,69 @@
+================================================================================
+N-gram Language Model Training and Evaluation
+================================================================================
+
+================================================================================
+UNIGRAM MODEL
+================================================================================
+Read 61530 sentences from A2-Data/1b_benchmark.train.tokens
+Training 1-gram model...
+Vocabulary size (including <UNK> and <STOP>, excluding <START>): 26602
+Total unique 1-grams: 26602
+
+================================================================================
+BIGRAM MODEL
+================================================================================
+Read 61530 sentences from A2-Data/1b_benchmark.train.tokens
+Training 2-gram model...
+Vocabulary size (including <UNK> and <STOP>, excluding <START>): 26602
+Total unique 2-grams: 510391
+Total unique 1-grams (contexts): 26602
+
+================================================================================
+TRIGRAM MODEL
+================================================================================
+Read 61530 sentences from A2-Data/1b_benchmark.train.tokens
+Training 3-gram model...
+Vocabulary size (including <UNK> and <STOP>, excluding <START>): 26602
+Total unique 3-grams: 1116132
+Total unique 2-grams (contexts): 510364
+
+================================================================================
+DEBUG TEST: 'HDTV .'
+================================================================================
+Unigram perplexity: 658.0 (expected: 658)
+Bigram perplexity: 63.7 (expected: 63.7)
+Trigram perplexity: 39.5 (expected: 39.5)
+
+================================================================================
+PERPLEXITY ON TRAINING SET
+================================================================================
+Unigram perplexity: 976.54
+Bigram perplexity: 77.07
+Trigram perplexity: 7.87
+
+================================================================================
+PERPLEXITY ON DEVELOPMENT SET
+================================================================================
+Read 12216 sentences from A2-Data/1b_benchmark.dev.tokens
+Unigram perplexity: 892.25
+Bigram perplexity: 3443.04
+Trigram perplexity: 2607451.93
+
+================================================================================
+PERPLEXITY ON TEST SET
+================================================================================
+Read 12105 sentences from A2-Data/1b_benchmark.test.tokens
+Unigram perplexity: 896.50
+Bigram perplexity: 3436.49
+Trigram perplexity: 2543381.81
+
+================================================================================
+SUMMARY TABLE
+================================================================================
+Model           Training        Development     Test           
+------------------------------------------------------------
+Unigram         976.54          892.25          896.50         
+Bigram          77.07           3443.04         3436.49        
+Trigram         7.87            2607451.93      2543381.81     
+================================================================================
