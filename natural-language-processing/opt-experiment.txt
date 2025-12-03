@@ -1,17 +1,3 @@
-================================================================================
-PART 3: LANGUAGE MODEL EXPERIMENTS WITH OPT-1.3B
-Alternative Implementation (Using OPT-1.3b instead of GPT-3)
-================================================================================
-================================================================================
-Loading facebook/opt-1.3b model...
-This may take a few minutes on first run (downloads ~2.5GB)
-================================================================================
-✓ Using CPU (slower but works)
-✓ Model loaded successfully!
-
-================================================================================
-EXPERIMENT 1: ZERO-SHOT QUESTION ANSWERING
-================================================================================
 
 ============================================================
 Question: Who succeeded Joseph Willard as president?
@@ -32,44 +18,28 @@ Generated Answer: Henry Ware
 Question: What year did Joseph Willard die?
 ------------------------------------------------------------
 Generated Answer: 1804
-
 ============================================================
-SUMMARY - Zero-Shot Results:
-============================================================
+Zero Shot
 
 1. Who succeeded Joseph Willard as president?
    Model Answer: Samuel Webber
    Expected: Samuel Webber
-   Status: ✓ CORRECT
 
 2. When did David Tappan die?
    Model Answer: Tappan died in 1803
    Expected: 1803
-   Status: ✓ CORRECT
 
 3. Who was elected to the chair in 1805?
    Model Answer: Henry Ware
    Expected: Henry Ware
-   Status: ✓ CORRECT
 
 4. What year did Joseph Willard die?
    Model Answer: 1804
    Expected: 1804
-   Status: ✓ CORRECT
-
 ================================================================================
-EXPERIMENT 2: FEW-SHOT QUESTION ANSWERING
-================================================================================
-Using few-shot prompt with examples...
-
-------------------------------------------------------------
+Few Shot
 Generated Answer: Samuel Webber
 Expected Answer: Samuel Webber
-Status: ✓ CORRECT
-
-============================================================
-Testing additional questions with few-shot learning:
-============================================================
 
 ------------------------------------------------------------
 Question: When did David Tappan die?
@@ -80,16 +50,12 @@ Generated Answer: 1803
 Question: Who was elected to the chair in 1805?
 ------------------------------------------------------------
 Generated Answer: Henry Ware
-
+Sentiment Analysis
 ================================================================================
-EXPERIMENT 3: SENTIMENT ANALYSIS TASK
-================================================================================
-
---- Zero-Shot Sentiment Analysis ---
 
 ------------------------------------------------------------
 Sentence: This movie was absolutely fantastic! I loved every minute of it.
-Predicted Sentiment: This movie was absolutely fantastic! I loved every minute
+Predicted Sentiment: Positive
 
 ------------------------------------------------------------
 Sentence: The food was terrible and the service was even worse.
@@ -129,101 +95,3 @@ Predicted Sentiment: Neutral
 ------------------------------------------------------------
 Sentence: What a waste of money, I'm very disappointed.
 Predicted Sentiment: Neutral
-
-================================================================================
-EXPERIMENT 4: SUMMARIZATION TASK
-================================================================================
-
---- Zero-Shot Summarization ---
-
-Original Text:
-Climate change is one of the most pressing issues facing humanity today. Rising global temperatures are causing ice caps to melt, sea levels to rise, and weather patterns to become more extreme. Scientists agree that human activities, particularly the burning of fossil fuels, are the primary cause of recent climate change. The effects are already being felt around the world, from more frequent hurricanes to prolonged droughts. Many countries are now taking action to reduce carbon emissions and transition to renewable energy sources.
-
-Generated Summary:
-The world is facing a climate crisis
-
-============================================================
---- Few-Shot Summarization ---
-
-Generated Summary (Few-Shot):
-Climate change is a serious threat to humanity
-
-================================================================================
-EXPERIMENT 5: COMPARING ZERO-SHOT VS FEW-SHOT
-================================================================================
-
-Analysis of Results:
-
-1. Question Answering:
-   - Zero-shot: The model attempts to answer but may lack the specific format
-   - Few-shot: Providing examples helps the model understand the expected format
-   - OPT-1.3b may struggle with complex reasoning compared to larger models
-
-2. Sentiment Analysis:
-   - Zero-shot: Can classify basic sentiments but may be inconsistent
-   - Few-shot: Examples help standardize the output format (Positive/Negative/Neutral)
-   - Performance improves with examples showing the exact format
-
-3. Summarization:
-   - Zero-shot: Generates summaries but may be verbose or off-target
-   - Few-shot: Examples help constrain length and focus
-   - Few-shot typically produces more concise, better-structured summaries
-
-4. General Observations:
-   - OPT-1.3b (1.3 billion parameters) is smaller than GPT-3 (175 billion)
-   - Performance is reasonable but not as strong as larger models
-   - Few-shot learning consistently improves results
-   - Temperature affects creativity vs consistency
-   - The model sometimes generates extra text beyond the answer
-
-5. Comparison to GPT-3:
-   - OPT-1.3b: Open-source, smaller, more accessible
-   - GPT-3: Larger, more capable, but requires API access
-   - OPT-1.3b demonstrates similar patterns but with lower accuracy
-   - Both benefit significantly from few-shot examples
-
-
-================================================================================
-SUMMARY FOR REPORT
-================================================================================
-
-For your report, include:
-
-1. Model Information:
-   - Model: facebook/opt-1.3b (Meta's Open Pretrained Transformer)
-   - Size: 1.3 billion parameters
-   - Alternative to GPT-3 for educational purposes
-   - Open-source and freely available
-
-2. Zero-Shot Question Answering Results:
-   - Include the table of questions, model answers, and expected answers
-   - Discuss accuracy and failure modes
-
-3. Few-Shot Question Answering Results:
-   - Show how examples improve performance
-   - Compare to zero-shot results
-
-4. Additional Task (Sentiment Analysis):
-   - Show zero-shot and few-shot results
-   - Discuss which performs better and why
-
-5. Additional Task (Summarization):
-   - Demonstrate the model's ability to condense information
-   - Compare zero-shot vs few-shot quality
-
-6. Analysis:
-   - Discuss the benefits of few-shot learning
-   - Compare OPT-1.3b capabilities to what you'd expect from GPT-3
-   - Explain how model size affects performance
-   - Discuss practical implications of using open-source vs proprietary models
-
-7. Limitations:
-   - OPT-1.3b is smaller than GPT-3 (1.3B vs 175B parameters)
-   - May have lower accuracy on complex reasoning tasks
-   - Sometimes generates extra text or goes off-topic
-   - Benefits significantly from prompt engineering
-
-
-================================================================================
-Experiments completed! Use the output above for your report.
-================================================================================

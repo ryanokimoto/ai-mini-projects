@@ -1,0 +1,46 @@
+
+
+UNIGRAM MODEL
+Training 1-gram model...
+Vocabulary size: 26602
+Total unique 1-grams: 26602
+
+
+BIGRAM MODEL
+Training 2-gram model...
+Vocabulary size: 26602
+Total unique 2-grams: 510391
+Total unique 1-grams (contexts): 26602
+
+
+TRIGRAM MODEL
+Training 3-gram model...
+Vocabulary size: 26602
+Total unique 3-grams: 1116132
+Total unique 2-grams (contexts): 510364
+
+
+PERPLEXITY ON TRAINING SET
+Unigram perplexity: 976.54
+Bigram perplexity: 77.07
+Trigram perplexity: 7.87
+
+
+PERPLEXITY ON DEVELOPMENT SET
+Unigram perplexity: 892.25
+Bigram perplexity: 3443.04
+Trigram perplexity: 2607451.93
+
+
+PERPLEXITY ON TEST SET
+Unigram perplexity: 896.50
+Bigram perplexity: 3436.49
+Trigram perplexity: 2543381.81
+
+
+Model           Training        Development     Test           
+------------------------------------------------------------
+Unigram         976.54          892.25          896.50         
+Bigram          77.07           3443.04         3436.49        
+Trigram         7.87            2607451.93      2543381.81     
+================================================================================
