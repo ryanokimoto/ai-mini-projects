@@ -6,7 +6,7 @@
 
 ## when running opt-experiment.py first run
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 then you can run
 
 `python3 opt-experiment.py`
