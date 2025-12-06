@@ -1,0 +1,39 @@
+Using device: cpu
+CSV columns: ['ID', 'utterances', 'IOB Slot tags']
+Loaded 2297 samples
+CSV columns: ['ID', 'utterances']
+Loaded 981 samples
+Initializing model...
+Model parameters: 2,529,436
+Epoch 1/25 - Loss: 1.2789 - F1: 0.0897
+Epoch 2/25 - Loss: 0.7163 - F1: 0.3224
+Epoch 3/25 - Loss: 0.4890 - F1: 0.4791
+Epoch 4/25 - Loss: 0.3452 - F1: 0.5961
+Epoch 5/25 - Loss: 0.2697 - F1: 0.6845
+Epoch 6/25 - Loss: 0.2138 - F1: 0.7502
+Epoch 7/25 - Loss: 0.1821 - F1: 0.7749
+Epoch 8/25 - Loss: 0.1584 - F1: 0.7964
+Epoch 9/25 - Loss: 0.1384 - F1: 0.8230
+Epoch 10/25 - Loss: 0.1244 - F1: 0.8441
+Epoch 11/25 - Loss: 0.1057 - F1: 0.8608
+Epoch 12/25 - Loss: 0.0980 - F1: 0.8678
+Epoch 13/25 - Loss: 0.0858 - F1: 0.8864
+Epoch 14/25 - Loss: 0.0808 - F1: 0.8849
+Epoch 15/25 - Loss: 0.0677 - F1: 0.9055
+Epoch 16/25 - Loss: 0.0676 - F1: 0.9053
+Epoch 17/25 - Loss: 0.0629 - F1: 0.9083
+Epoch 18/25 - Loss: 0.0590 - F1: 0.9129
+Epoch 19/25 - Loss: 0.0540 - F1: 0.9172
+Epoch 20/25 - Loss: 0.0480 - F1: 0.9331
+Epoch 21/25 - Loss: 0.0508 - F1: 0.9246
+Epoch 22/25 - Loss: 0.0429 - F1: 0.9369
+Epoch 23/25 - Loss: 0.0426 - F1: 0.9332
+Epoch 24/25 - Loss: 0.0377 - F1: 0.9354
+Epoch 25/25 - Loss: 0.0358 - F1: 0.9461
+
+First 5 predictions (index, num_tags):
+  Sample 0: 3 tags -> O O B_movie
+  Sample 1: 7 tags -> O O O O O B_movie I_movie
+  Sample 2: 8 tags -> O O O O O O B_movie I_movie
+  Sample 3: 4 tags -> O O O B_movie
+  Sample 4: 4 tags -> O O O B_movie
